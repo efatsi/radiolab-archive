@@ -1,4 +1,3 @@
-Year: 2007 - Episodes: 18
   - Stress
     Stories of stress -- from a singer who loses her voice, to an author caught in a body that never grew up.
     2007-04-09T11:47:46
@@ -79,17 +78,6 @@ Year: 2007 - Episodes: 18
     2007-12-18T11:43:49
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab121807pod.mp3?awCollectionId=15957&awEpisodeId=91749
 
-  - Placebo
-    The healing powers of belief, from the symbolic power of the doctor coat, to the very real stash of opium in your brain.
-    2009-12-28T11:47:14
-    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab051807pod.mp3?awCollectionId=15957&awEpisodeId=91539
-
-  - Time
-    The strange, subjective nature of time -- from a sped-up spin through childhood, to a really, really slowed-down Beethoven symphony.&nbsp;
-    2010-08-24T11:47:48
-    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab042407pod.mp3?awCollectionId=15957&awEpisodeId=91584
-
-Year: 2008 - Episodes: 22
   - The Ring and I
     It might seem hyperbole to claim, as many Wagnerites do, that The Ring Cycle is 'The Greatest Work of Art Ever.' But it's permeated our culture from Star Wars to Bugs Bunny to J.R.R. ...
     2007-12-31T12:08:13
@@ -200,7 +188,6 @@ Year: 2008 - Episodes: 22
     2008-12-29T11:49:05
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab120508.mp3?awCollectionId=15957&awEpisodeId=91662
 
-Year: 2009 - Episodes: 29
   - Yellow Fluff and Other Curious Encounters
     Stories of love and loss in the name of science.
     2009-01-12T11:49:12
@@ -235,6 +222,11 @@ Year: 2009 - Episodes: 29
     <p>There are some questions that just don't give in to experiments and data. We take on one of those questions.</p>
     2009-04-07T17:30:12
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast04insilence.mp3?awCollectionId=15957&awEpisodeId=91898
+
+  - Where Am I?
+    Radiolab examines the connection between your brain and your body -- and what happens when it breaks.
+    2009-04-20T11:47:00
+    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab050506.mp3?awCollectionId=15957&awEpisodeId=91524
 
   - Juana Molina
     Sometimes on the podcast, we like to talk about musicians and the music they make. Today we introduce you to Juana Molina. Last season we used some of her of music in the breaks for t...
@@ -347,7 +339,11 @@ Year: 2009 - Episodes: 29
     2009-12-14T21:00:29
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast09inc.mp3?awCollectionId=15957&awEpisodeId=91934
 
-Year: 2010 - Episodes: 24
+  - Placebo
+    The healing powers of belief, from the symbolic power of the doctor coat, to the very real stash of opium in your brain.
+    2009-12-28T11:47:14
+    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab051807pod.mp3?awCollectionId=15957&awEpisodeId=91539
+
   - Animal Minds
     Communicating across species -- from bringing pets to church, to a rescued whale that may have found a way to say thanks.
     2010-01-11T11:49:57
@@ -428,6 +424,11 @@ Year: 2010 - Episodes: 24
     2010-08-09T23:00:15
 
 
+  - Time
+    The strange, subjective nature of time -- from a sped-up spin through childhood, to a really, really slowed-down Beethoven symphony.&nbsp;
+    2010-08-24T11:47:48
+    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab042407pod.mp3?awCollectionId=15957&awEpisodeId=91584
+
   - Voices in Your Head
     <p>In this podcast, Jad talks to Charles Fernyhough about the connection between thought and the voice in your head. How did it get there? And what's happening when people hear someone else's voice in their head?</p>
     2010-09-07T21:55:10
@@ -468,7 +469,6 @@ Year: 2010 - Episodes: 24
     2010-12-28T19:04:51
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast10bats.mp3?awCollectionId=15957&awEpisodeId=105440
 
-Year: 2011 - Episodes: 24
   - The Universe Knows My Name
     In this new short, we explore luck and fate, both good and bad, with an author and a cartoon character.
     2011-01-11T22:25:30
@@ -559,6 +559,11 @@ Year: 2011 - Episodes: 24
     2011-09-20T19:10:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast11beachey.mp3?awCollectionId=15957&awEpisodeId=159748
 
+  - The Bad Show
+    We wrestle with the dark side of human nature, and ask whether it's something we can ever really understand, or fully escape.
+    2011-10-13T09:56:28
+    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab010912.mp3?awCollectionId=15957&awEpisodeId=180092
+
   - Slow
     When Andy first met Kohn, he saw a college freshman in a wheelchair who moved and talked slow. Getting to know Kohn&nbsp;had him&nbsp;questioning what it means to be truly familiar with something.
     2011-10-18T19:00:00
@@ -588,12 +593,6 @@ Year: 2011 - Episodes: 24
     In this podcast short, a strange twist of legal taxonomy causes a dispute over whether X-MEN  action figures are toys or dolls and sparks a court case about what it means  to be human.
     2011-12-26T19:00:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast11xmen.mp3?awCollectionId=15957&awEpisodeId=177199
-
-Year: 2012 - Episodes: 25
-  - The Bad Show
-    We wrestle with the dark side of human nature, and ask whether it's something we can ever really understand, or fully escape.
-    2011-10-13T09:56:28
-    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab010912.mp3?awCollectionId=15957&awEpisodeId=180092
 
   - Wake Up and Dream
     In today's short, a man confronts a bully, and frees himself from a recurring nightmare that's terrorized him for more than 20 years.
@@ -715,7 +714,11 @@ Year: 2012 - Episodes: 25
     2012-12-17T20:00:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab121712.mp3?awCollectionId=15957&awEpisodeId=257189
 
-Year: 2013 - Episodes: 25
+  - Solid as a Rock
+    It's comforting to think that if you take an object -- a rock, let's say -- and break it down into tinier and tinier more elemental parts...
+    2012-12-31T17:00:00
+    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast12solidrock.mp3?awCollectionId=15957&awEpisodeId=259774
+
   - The Bitter End
     Producer Sean Cole introduces us to Joseph Gallo, a doctor and professor at Johns Hopkins University.
     2013-01-15T17:00:00
@@ -842,7 +845,6 @@ Year: 2013 - Episodes: 25
     2013-12-30T17:30:42
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast13timesachangin.mp3?awCollectionId=15957&awEpisodeId=339013
 
-Year: 2014 - Episodes: 18
   - KILL 'EM ALL
     KILL 'EM ALL
     2014-03-25T18:59:43
@@ -933,7 +935,6 @@ Year: 2014 - Episodes: 18
     2014-12-17T19:35:45
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab/radiolab122314.mp3?awCollectionId=15957&awEpisodeId=420943
 
-Year: 2015 - Episodes: 22
   - American Football
     The most popular sport in the US is savage, creative, brutal &amp; balletic. Love it or loathe it, it&rsquo;s a touchstone of the American identity. &nbsp;
     2015-01-08T12:23:59
@@ -1044,7 +1045,6 @@ Year: 2015 - Episodes: 22
     2016-01-07T18:05:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast16cathedral.mp3?awCollectionId=15957&awEpisodeId=562054
 
-Year: 2016 - Episodes: 24
   - I Don't Have To Answer That
     Roosevelt, Kennedy, Eisenhower &hellip; they all got a pass. But today we peer back at the moment when poking into the private lives of political figures became standard practice.
     2016-01-29T23:00:00
@@ -1165,7 +1165,6 @@ Year: 2016 - Episodes: 24
     2016-12-30T04:00:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast16loselose.mp3?awCollectionId=15957&awEpisodeId=726626
 
-Year: 2017 - Episodes: 28
   - Radiolab Presents: On the Media: Busted, America's Poverty Myths
     On the Media&rsquo;s Brooke Gladstone tells Jad and Robert about a project they launched to look at the tales we tell when we talk about poverty.
     2017-01-18T01:00:00
@@ -1306,7 +1305,6 @@ Year: 2017 - Episodes: 28
     2017-12-29T18:00:00
     []
 
-Year: 2018 - Episodes: 37
   - How to Be a Hero
     What&nbsp;are people thinking when they risk their lives for someone else?&nbsp; Is heroism an act of sympathy or empathy?&nbsp;&nbsp;
     2018-01-09T18:09:00
@@ -1492,7 +1490,6 @@ Year: 2018 - Episodes: 37
     2018-12-28T18:00:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast18bonusscavengerhunt.mp3?aisGetOriginalStream=true&awCollectionId=15957&awEpisodeId=905125
 
-Year: 2019 - Episodes: 33
   - The Punchline
     One of the worst players in the NHL gets voted into the All-Star Game.
     2019-01-16T03:03:00
@@ -1658,7 +1655,6 @@ Year: 2019 - Episodes: 33
     2019-12-28T00:04:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_membership/radiolab_membership19managainsthorse.mp3?awCollectionId=15957&awEpisodeId=983504
 
-Year: 2020 - Episodes: 53
   - 60 Words
     How one sentence -- just 60 words written in the hours after the September 11 attacks -- became the legal foundation for the "war on terror."
     2020-01-07T23:11:00
@@ -1924,7 +1920,6 @@ Year: 2020 - Episodes: 53
     2020-12-23T07:53:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast20covidchristmasspecial.mp3?awCollectionId=15957&awEpisodeId=1076528
 
-Year: 2021 - Episodes: 43
   - Sight Unseen
     We try to contain the stream of photos coming at us in the last week and ask a question about an image that&nbsp;few of us get to see, a soldier fatally wounded on the battlefield.&nbsp;
     2021-01-13T01:07:00
@@ -2140,7 +2135,11 @@ Year: 2021 - Episodes: 43
     2021-12-17T10:00:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast121721_vanishingwords.mp3?awCollectionId=15957&awEpisodeId=1161806
 
-Year: 2022 - Episodes: 52
+  - Flop Off
+    This year was a flop. Here at Radiolab we wanted to flip that flop, so we dredged up the most mortifying, most cringeworthy, most gravity-defying flops as a Flop Off to 2021.
+    2021-12-31T10:00:00
+    https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/radiolab_podcast/radiolab_podcast123121_flopoff.mp3?awCollectionId=15957&awEpisodeId=1165734
+
   - Worst. Year. Ever.
     If you thought the last few years were bad &hellip;
     2022-01-07T10:00:00
@@ -2401,7 +2400,6 @@ Year: 2022 - Episodes: 52
     2022-12-30T10:00:00
     https://chrt.fm/track/53A61E/pdst.fm/e/www.podtrac.com/pts/redirect.mp3/waaa.wnyc.org/radiolab_podcast/radiolab_podcast123022_newnormal.mp3?awCollectionId=15957&awEpisodeId=1285103
 
-Year: 2023 - Episodes: 1
   - Universe In Verse
     A poet-led tour of the universe.
     2023-01-06T10:00:00
