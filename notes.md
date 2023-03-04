@@ -35,7 +35,7 @@ curl 'https://kxhzn32iej-dsn.algolia.net/1/indexes/radiolab/query?x-algolia-agen
   -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
-  --data-raw '{"query":"","page":2,"filters":"date-line-ts:1199170800 TO 1230727726"}' \
+  --data-raw '{"query":"","page":1,"filters":"date-line-ts:1199170800 TO 1230727726"}' \
   --compressed
 ```
 

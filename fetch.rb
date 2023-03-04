@@ -35,7 +35,8 @@ def query_url(year, page)
   URL
 end
 
-years = (2008..2022)
+# years = (2008..2023)
+years = [2023]
 
 @episodes ||= {}
 
@@ -59,7 +60,7 @@ end
 def print_it
   for year, episodes in @episodes
     puts "Year: #{year} - Episodes: #{episodes.count}"
-    episodes.each do |episode|
+    episodes.sort_by { |episode| episode["publish-at"] }.each do |episode|
       puts "  - #{episode["title"]}"
       puts "    #{episode["tease"]}"
       puts "    #{episode["publish-at"]}"
