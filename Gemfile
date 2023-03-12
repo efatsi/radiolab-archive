@@ -25,3 +25,5 @@ group :development do
   gem "pry-rails"
 end
 
+
+gem "dockerfile-rails", ">= 1.2", :group => :development
