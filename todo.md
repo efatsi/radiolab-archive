@@ -1,2 +1,1 @@
-- download all audios to local file system (in case links change)
 - make database, linked to audio, w/ `listened` attribute
