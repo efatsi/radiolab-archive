@@ -29,3 +29,4 @@
 
 # Manually added
 lib/data_fetching/audios
+.DS_Store

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RadiolabArchive</title>
+    <title>Radiolab Archive</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,9 +11,12 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-indigo-900 text-gray-200">
+  <body class="bg-[#001d37] text-gray-200">
     <main class="container mx-auto mt-16 px-5 max-w-[800px]">
       <h1 class="text-center text-3xl font-bold mb-12">Radiolab Archive</h1>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
       <%= yield %>
     </main>
