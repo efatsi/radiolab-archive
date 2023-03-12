@@ -14,7 +14,7 @@
             <% Episode.order(publish_at: :desc).each do |episode| %>
               <tr>
                 <td class="pl-4 pr-3 text-sm font-medium text-white sm:pl-0 w-[250px]">
-                  <%= link_to episode.title, "#", class: "block py-4" %>
+                  <%= link_to episode.title, episode_path(episode), class: "block py-4 text-gray-100" %>
                 </td>
                 <td class="py-4 px-3 text-sm text-gray-300"><%= episode.publish_at.strftime("%x") %></td>
                 <td class="py-4 px-3 text-sm text-gray-300"><%== episode.tease %></td>

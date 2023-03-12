@@ -1,0 +1,47 @@
+<h2 class="text-center text-2xl mb-8"><%= episode.title %></h2>
+
+<div class="overflow-hidden bg-white shadow sm:rounded-lg">
+  <div class="px-4 py-5 sm:px-6">
+    <h3 class="text-base font-semibold leading-6 text-gray-900">Episode Details</h3>
+  </div>
+  <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
+    <dl class="sm:divide-y sm:divide-gray-200">
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Title</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0"><%= episode.title %></dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Publish Date</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0"><%= episode.publish_at.strftime("%b %d, %Y") %></dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Episode Link</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0"><%= link_to "https://radiolab.org/episodes/#{episode.slug}", "https://radiolab.org/episodes/#{episode.slug}" %></dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Audio Source</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0"><%= link_to episode.audio_url, episode.audio_url %></dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Tease</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0"><%== episode.tease %></dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Image</dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+          <%= image_tag episode.image_url %>
+        </dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Duration</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+          <%= seconds_to_description(episode.length) %>
+        </dd>
+      </div>
+      <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Full Description</dt>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0"><%== episode.cut_description %></dd>
+      </div>
+    </dl>
+  </div>
+</div>
