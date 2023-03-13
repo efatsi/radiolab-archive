@@ -8,7 +8,7 @@
   <% if current_user %>
     <td class="py-4 px-2">
       <div class="flex items-center justify-around h-full">
-        <% eu ||= @user_episodes.detect{ |eu| eu.episode == episode } %>
+        <% eu ||= @user_episodes.detect{ |eu| eu.episode_id == episode.id } %>
 
         <%= link_to listen_path(episode), data: { "turbo-method": :post } do %>
           <%= heroicon (eu&.listened? ? "eye" : "eye-slash"), options: { class: "w-4 h-4" }, variant: (eu&.listened? ? "solid" : "outline") %>

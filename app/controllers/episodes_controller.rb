@@ -6,6 +6,32 @@ class EpisodesController < ApplicationController
       # cache in memory to avoid N+1 queries
       @user_episodes = current_user.user_episodes.to_a
     end
+
+    if current_user && params[:filter].in?(%w[unlistened listened])
+      @filter = params[:filter]
+
+      listened_ids = @user_episodes.select(&:listened?).map(&:episode_id)
+      if @filter == "listened"
+        @episodes = Episode.where(id: listened_ids)
+      else
+        @episodes = Episode.where.not(id: listened_ids)
+      end
+    else
+      @episodes = Episode.all
+    end
+  end
+
+  def favorites_index
+    if params[:token]
+      @user = User.find_by!(token: params[:token])
+    elsif current_user
+      @user = current_user
+    else
+      return redirect_to root_path
+    end
+
+    @user_episodes = @user.user_episodes.where(favorite: true).to_a
+    @episodes = Episode.where(id: @user_episodes.map(&:episode_id))
   end
 
   def show

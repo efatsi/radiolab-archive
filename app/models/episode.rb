@@ -1,6 +1,8 @@
 class Episode < ApplicationRecord
   has_many :user_episodes
 
+  default_scope { order(publish_at: :desc) }
+
   def to_param
     slug
   end

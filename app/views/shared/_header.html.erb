@@ -1,11 +1,11 @@
-<div class="flex justify-between items-center mb-12">
+<div class="flex justify-between items-center mb-8">
   <h1 class="text-3xl font-bold text-gray">
     <%= link_to "Radiolab Archive", root_path %>
   </h1>
 
   <% if current_user %>
     <div class="flex items-center">
-      <%= link_to "Favorites", "#" %>
+      <%= link_to "Favorites", favorites_path %>
       <span class="mx-2">|</span>
       <%= link_to "Log out", destroy_user_session_path %>
     </div>
