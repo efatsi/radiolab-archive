@@ -1,24 +1,33 @@
-# README
+# Radiolab Archive
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Available at: https://long-waterfall-5524.fly.dev/
 
-Things you may want to cover:
+## Local Development
+```bash
+# Install dependencies
+bundle install
 
-* Ruby version
+# Set up database
+rails db:create db:migrate
+# Seed episode data
+rails db:seed
 
-* System dependencies
+# Start application
+foreman start -f Procfile.dev
+```
 
-* Configuration
+## Fly Commands
+```bash
+# Login
+fly auth login
 
-* Database creation
+# Deploy
+fly deploy
 
-* Database initialization
+# SSH
+fly ssh console -C '/bin/bash'
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Open / Status
+flyctl open
+flyctl status
+```
