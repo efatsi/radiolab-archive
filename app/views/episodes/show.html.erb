@@ -20,7 +20,16 @@
       </div>
       <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-8">
         <dt class="text-sm font-medium">Audio Source</dt>
-        <dd class="overflow-scroll mt-1 text-sm text-gray-300 sm:col-span-2 sm:mt-0"><%= link_to episode.audio_url, episode.audio_url %></dd>
+        <dd class="overflow-scroll mt-1 text-sm text-gray-300 sm:col-span-2 sm:mt-0">
+          <div class="flex items-center">
+            <audio controls class="mr-4">
+              <source src="<%= episode.audio_url %>" type="audio/mpeg">
+              Your browser does not support the audio tag.
+            </audio>
+
+            (<%= link_to "link", episode.audio_url %>)
+          </div>
+        </dd>
       </div>
       <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-8">
         <dt class="text-sm font-medium">Tease</dt>
