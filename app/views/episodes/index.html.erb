@@ -8,17 +8,16 @@
               <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white sm:pl-0">Title</th>
               <th scope="col" class="py-3.5 px-3 text-left text-sm font-semibold text-white">Date</th>
               <th scope="col" class="py-3.5 px-3 text-left text-sm font-semibold text-white">Tease</th>
+
+              <% if current_user %>
+                <th scope="col" class="py-3.5 px-3 text-left text-sm font-semibold text-white">Actions</th>
+              <% end %>
+
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-800">
             <% Episode.order(publish_at: :desc).each do |episode| %>
-              <tr>
-                <td class="pl-4 pr-3 text-sm font-medium text-white sm:pl-0 w-[250px]">
-                  <%= link_to episode.title, episode_path(episode), class: "block py-4" %>
-                </td>
-                <td class="py-4 px-3 text-sm text-gray-300"><%= episode.publish_at.strftime("%x") %></td>
-                <td class="py-4 px-3 text-sm text-gray-300"><%== episode.tease %></td>
-              </tr>
+              <%= render "episode_row", episode: episode %>
             <% end%>
           </tbody>
         </table>

@@ -15,6 +15,7 @@ gem "bootsnap", require: false
 gem "devise"
 gem "awesome_print"
 gem "sprig"
+gem "heroicon"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

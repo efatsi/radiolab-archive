@@ -1,9 +1,14 @@
 - user login
   - join model btwn users and episodes
-  - show played in all view
-  - show played view
-  - show unplayed view
-  - Lists (or just Favorites)
+  - Favorites
+  - Actions
+    - favorite
+    - listened
+  - Toggle (all / played / unplayed)
+
 - pull new episodes after Jan 6
   - (make repeatable)
-hgycdfjsesss
+
+
+- polish
+  - notice/alerts

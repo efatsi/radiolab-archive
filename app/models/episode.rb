@@ -1,4 +1,6 @@
 class Episode < ApplicationRecord
+  has_many :user_episodes
+
   def to_param
     slug
   end
