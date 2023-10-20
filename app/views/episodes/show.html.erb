@@ -1,4 +1,18 @@
-<h2 class="text-center text-2xl mb-8"><%= episode.title %></h2>
+<div class="flex justify-between text-sm mb-4">
+  <div>
+    <% if previous_episode = Episode.find_by(id: episode.id - 1) %>
+      <%= link_to "<- #{previous_episode.title}", previous_episode %>
+    <% end %>
+  </div>
+
+  <div>
+    <% if next_episode = Episode.find_by(id: episode.id + 1) %>
+      <%= link_to "#{next_episode.title} ->", next_episode %>
+    <% end %>
+  </div>
+</div>
+
+<h2 class="text-center text-2xl mb-6"><%= episode.title %></h2>
 
 <div class="overflow-hidden bg-gray-900 shadow sm:rounded-lg text-gray-300 border border-gray-600">
   <div class="px-4 py-5 sm:px-8">
