@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "/favorites", to: "episodes#favorites_index", as: :favorites
   get "/favorites/:token", to: "episodes#favorites_index", as: :user_favorites
 
+  get "/roulette", to: "episodes#roulette", as: :roulette
+
   # Keep these last, since going off slugs
   get "/:slug", to: "episodes#show", as: :episode
   post "/:slug/listen", to: "episodes#update_listen", as: :listen

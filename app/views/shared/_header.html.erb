@@ -10,7 +10,9 @@
       <%= link_to "Log out", destroy_user_session_path %>
     </div>
   <% else %>
-    <div>
+    <div class="flex items-center">
+      <%= link_to "Roulette", roulette_path %>
+      <span class="mx-2">|</span>
       <%= link_to "Log in", new_user_session_path %>
     </div>
   <% end %>

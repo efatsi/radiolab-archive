@@ -1,0 +1,31 @@
+<% active_class = "inline-block p-4 font-semibold rounded-t-lg border border-gray-200 border-b-0 border-opacity-60" %>
+<% inactive_class = "inline-block p-4 rounded-t-lg hover:bg-gray-800 hover:bg-opacity-40 hover:text-gray-300" %>
+
+<div data-controller="tabs">
+  <div class="flex flex-wrap w-full text-sm font-medium text-center text-gray-400 gap-4 mb-4">
+    <% @random_episodes.each_with_index do |episode, i| %>
+      <a
+        href="#"
+        class="me-2 flex-grow <%= i == 1 ? active_class : inactive_class %>"
+        data-tab-index="<%= i %>"
+        data-action="tabs#change"
+      >
+        <%= episode.title %>
+      </a>
+    <% end %>
+  </div>
+
+  <%= @random_episodes.each_with_index do |episode, i| %>
+    <div
+      data-tabs-target="tab"
+      data-tab-index="<%= i %>"
+      class="<%= i == 1 ? "block" : "hidden" %>"
+    >
+      <h2 class="text-center text-2xl mb-6">
+        <%= link_to episode.title, episode %>
+      </h2>
+
+      <%= render "episode_details", episode: episode %>
+    </div>
+  <% end %>
+</div>

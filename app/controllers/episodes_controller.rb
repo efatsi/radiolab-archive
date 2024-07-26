@@ -37,6 +37,10 @@ class EpisodesController < ApplicationController
   def show
   end
 
+  def roulette
+    @random_episodes = Episode.all.sample(3)
+  end
+
   def update_listen
     update_and_render(:listened)
   end
