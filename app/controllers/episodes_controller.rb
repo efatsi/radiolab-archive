@@ -38,7 +38,7 @@ class EpisodesController < ApplicationController
   end
 
   def roulette
-    @random_episodes = Episode.all.sample(3)
+    @random_episodes = Episode.all.sample(3).sort_by(&:publish_at)
   end
 
   def update_listen

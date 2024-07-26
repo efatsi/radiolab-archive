@@ -6,7 +6,7 @@
   data-tabs-active-class-value="<%= active_class %>"
   data-tabs-inactive-class-value="<%= inactive_class %>"
 >
-  <div class="flex flex-wrap w-full font-medium text-center text-gray-400 gap-4 mb-4">
+  <div class="flex w-full font-medium text-center text-gray-400 gap-4 mb-4">
     <% @random_episodes.each_with_index do |episode, i| %>
       <a
         href="#"
@@ -16,7 +16,10 @@
         data-action="tabs#change"
       >
         <div><%= episode.title %></div>
-        <div class="text-sm"><%= episode.publish_at.strftime("%m/%d/%y") %></div>
+        <div class="text-sm flex justify-center gap-4">
+          <span><%= episode.publish_at.strftime("%-m/%-d/%y") %></span>
+          <span><%= episode.pretty_length %></span>
+        </div>
       </a>
     <% end %>
   </div>

@@ -11,4 +11,17 @@ class Episode < ApplicationRecord
     # remove rest of text after "Our newsletter comes out every Wednesday"
     description.split("Our newsletter comes out every Wednesday").first
   end
+
+  def pretty_length
+    minute_seconds = [length / 60 % 60, length % 60].map {
+      |t| t.to_s.rjust(2,'0')
+    }.join(':')
+
+    if length > 3600
+      "#{length / 3600}:#{minute_seconds}"
+    else
+      minute_seconds
+    end
+
+  end
 end
