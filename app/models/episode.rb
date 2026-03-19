@@ -3,6 +3,14 @@ class Episode < ApplicationRecord
 
   default_scope { order(publish_at: :desc) }
 
+  def audio_url
+    if Rails.env.development?
+      return "/audios/#{slug}.mp3"
+    else
+      super
+    end
+  end
+
   def to_param
     slug
   end
