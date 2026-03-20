@@ -5,7 +5,9 @@ class Episode < ApplicationRecord
 
   def audio_url
     if Rails.env.development?
-      return "/audios/#{slug}.mp3"
+      "/audios/#{slug}.mp3"
+    elsif Rails.env.production?
+      "https://fatsi-hobby.sfo3.cdn.digitaloceanspaces.com/radiolab/audios/#{slug}.mp3"
     else
       super
     end
