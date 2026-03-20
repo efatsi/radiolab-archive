@@ -39,3 +39,6 @@
 /public/assets
 
 lib/data_fetching
+
+# Ignore local audio files (served from DigitalOcean Spaces in production).
+/public/audios
