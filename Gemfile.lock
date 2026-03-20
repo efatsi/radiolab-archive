@@ -73,7 +73,7 @@ GEM
       msgpack (~> 1.2)
     builder (3.3.0)
     coderay (1.1.3)
-    concurrent-ruby (1.3.6)
+    concurrent-ruby (1.2.3)
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.1)
@@ -225,6 +225,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bootsnap
+  concurrent-ruby (< 1.3)
   debug
   devise
   dockerfile-rails (>= 1.2)

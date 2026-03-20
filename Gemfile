@@ -11,6 +11,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
 gem "bootsnap", require: false
+gem "concurrent-ruby", "< 1.3"
 
 gem "devise"
 gem "awesome_print"
