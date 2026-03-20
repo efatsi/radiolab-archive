@@ -9,7 +9,7 @@ gem "puma", "~> 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
-gem "tailwindcss-rails"
+gem "tailwindcss-rails", "~> 3.3.1"
 gem "bootsnap", require: false
 gem "concurrent-ruby", "< 1.3"
 
