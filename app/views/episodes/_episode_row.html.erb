@@ -3,7 +3,7 @@
     <%= link_to episode.title, episode_path(episode), class: "block py-4" %>
   </td>
   <td class="py-4 px-3 text-sm text-gray-300"><%= episode.publish_at.strftime("%x") %></td>
-  <td class="py-4 px-3 text-sm text-gray-300"><%== episode.tease %></td>
+  <td class="py-4 px-3 text-sm text-gray-300"><%= truncate(strip_tags(episode.tease), length: 500, separator: " ", escape: false) %></td>
 
   <% if current_user %>
     <td class="py-4 px-2">
