@@ -1,6 +1,12 @@
 class Episode < ApplicationRecord
   has_many :user_episodes
 
+  # Set by `rails episodes:import` for rebroadcasts. A replay may have no
+  # original_episode when the description says it's a rerun but no matching
+  # title is in the archive.
+  belongs_to :original_episode, class_name: "Episode", optional: true
+  has_many :replays, -> { reorder(:publish_at) }, class_name: "Episode", foreign_key: :original_episode_id
+
   default_scope { order(publish_at: :desc) }
 
   def audio_url
@@ -23,6 +29,8 @@ class Episode < ApplicationRecord
   end
 
   def pretty_length
+    return if length.nil?
+
     minute_seconds = [length / 60 % 60, length % 60].map {
       |t| t.to_s.rjust(2,'0')
     }.join(':')

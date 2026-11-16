@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_13_022538) do
+ActiveRecord::Schema[7.0].define(version: 2026_11_16_180000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -25,6 +25,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_022538) do
     t.integer "length"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "replay", default: false, null: false
+    t.bigint "original_episode_id"
+    t.index ["original_episode_id"], name: "index_episodes_on_original_episode_id"
   end
 
   create_table "user_episodes", force: :cascade do |t|
@@ -51,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_022538) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "episodes", "episodes", column: "original_episode_id"
   add_foreign_key "user_episodes", "episodes", on_delete: :cascade
   add_foreign_key "user_episodes", "users", on_delete: :cascade
 end

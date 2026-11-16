@@ -36,7 +36,7 @@
       <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-8">
         <dt class="text-sm font-medium">Image</dt>
         <dd class="mt-1 text-sm text-gray-300 sm:col-span-2 sm:mt-0">
-          <%= image_tag episode.image_url %>
+          <%= image_tag episode.image_url if episode.image_url.present? %>
         </dd>
       </div>
       <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-8">

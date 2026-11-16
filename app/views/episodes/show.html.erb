@@ -14,4 +14,23 @@
 
 <h2 class="text-center text-2xl mb-6"><%= episode.title %></h2>
 
+<% if episode.replay? %>
+  <div class="mb-6 rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-200">
+    <span class="font-semibold">Replay.</span>
+    <% if (original = episode.original_episode) %>
+      Originally aired <%= original.publish_at.strftime("%b %d, %Y") %> as
+      <%= link_to original.title, original, class: "underline hover:text-white" %>.
+    <% else %>
+      Radiolab's description marks this as a rerun of an earlier episode, but no matching original was found in the archive.
+    <% end %>
+  </div>
+<% end %>
+
+<% if episode.replays.any? %>
+  <div class="mb-6 rounded-lg border border-gray-600 px-4 py-3 text-sm text-gray-300">
+    <span class="font-semibold">Replayed on</span>
+    <%= safe_join(episode.replays.map { |r| link_to(r.publish_at.strftime("%b %d, %Y"), r, class: "underline hover:text-white") }, ", ") %>.
+  </div>
+<% end %>
+
 <%= render "episode_details", episode: episode %>

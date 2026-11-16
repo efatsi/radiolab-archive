@@ -56,6 +56,43 @@ module RadiolabImport
     rest.match?(%r{\Ahttps?://}) ? rest : "https://#{rest}"
   end
 
+  # Phrases in a description that mean the episode is a rerun. Kept narrow:
+  # plain "originally" also shows up in corrections ("we originally reported…").
+  REPLAY_HINT = /
+    \b(originally|first)\s+(aired|ran|broadcast|podcast)\b |
+    \boriginally\s+(posted|published|released)\s+(this\s+episode|in\s+(19|20)\d\d|on\s+\w+\s+\d) |
+    \brebroadcast |
+    \bfrom\s+the\s+(radiolab\s+)?(archives?|vault)\b |
+    \bencore\b |
+    \breplay(ing)?\b
+  /ix
+
+  # "Radiolab Presents: More Perfect - The Gun Show" and
+  # "More Perfect: The Gun Show" both become "more perfect gun show".
+  def normalize_title(title)
+    ActionController::Base.helpers.strip_tags(title.to_s).downcase
+      .sub(/\A(update|radiolab presents|rebroadcast|replay|encore)\s*:\s*/, "")
+      .gsub("&", " and ")
+      .gsub(/[^a-z0-9]+/, " ")
+      .gsub(/\b(the|a|an)\b/, " ")
+      .squish
+  end
+
+  def replay_hint(description)
+    ActionController::Base.helpers.strip_tags(description.to_s).squish[REPLAY_HINT]
+  end
+
+  # Earliest episode published before `episode` with the same normalized title.
+  # `known` is every episode seen so far, oldest first.
+  def find_original(episode, known)
+    title = normalize_title(episode.title)
+    known.find do |other|
+      other.slug != episode.slug &&
+        other.publish_at < episode.publish_at &&
+        normalize_title(other.title) == title
+    end
+  end
+
   # Same field mapping as playground/scratch.rb#jsonify_seeds.
   def attributes_for(hit)
     {
@@ -81,7 +118,8 @@ namespace :episodes do
     puts "Fetching episodes published after #{since}..."
 
     hits = RadiolabImport.fetch_since(since).sort_by { |hit| hit["publish-at"] }
-    created = updated = skipped = 0
+    created = updated = skipped = replays = 0
+    known = Episode.reorder(:publish_at).to_a # grows as we go, so reruns within this batch match too
 
     hits.each do |hit|
       slug = hit["slug"].to_s.strip
@@ -96,6 +134,18 @@ namespace :episodes do
       puts "  [#{label}] #{episode.publish_at.to_date}  #{episode.title}  (#{slug})"
       puts "           no audio in feed (probably a video)" if episode.audio_url.nil?
 
+      original = RadiolabImport.find_original(episode, known)
+      hint = RadiolabImport.replay_hint(episode.description)
+      episode.replay = original.present? || hint.present?
+      episode.original_episode = original
+      known << episode unless known.include?(episode)
+
+      if episode.replay?
+        replays += 1
+        puts "           REPLAY of #{original.title} (#{original.publish_at.to_date}, #{original.slug})" if original
+        puts "           REPLAY: description says \"#{hint}\"#{" (no matching title in archive)" unless original}" if hint
+      end
+
       next if dry_run || !episode.changed?
 
       episode.new_record? ? created += 1 : updated += 1
@@ -103,9 +153,9 @@ namespace :episodes do
     end
 
     if dry_run
-      puts "DRY RUN: #{hits.size} found, nothing saved."
+      puts "DRY RUN: #{hits.size} found (#{replays} replays), nothing saved."
     else
-      puts "Done: #{created} created, #{updated} updated, #{skipped} skipped. #{Episode.count} total."
+      puts "Done: #{created} created, #{updated} updated, #{skipped} skipped, #{replays} replays. #{Episode.count} total."
     end
   end
 
